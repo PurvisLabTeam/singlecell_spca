@@ -18,7 +18,7 @@ library(ggplot2)
 
 
 ```{r}
-df = read.csv("/Users/oliviawen/singlecell_spca/data/T47D_PHATE.csv")
+df = read.csv("data/T47D_PHATE.csv")
 ```
 
 ```{r}
