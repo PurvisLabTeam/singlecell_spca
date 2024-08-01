@@ -21,6 +21,21 @@ git clone https://github.com/PurvisLabTeam/singlecell_spca.git
 
 - Run [method_comparisons.ipynb](./method_comparisions.ipynb) to compare performance of SPCA, PCA, and PHATE. 
 
+- All figures are saved as pdfs in the [figures](./figures/) folder. To save and view figures interactively, follow the following steps: 
+    - Add the pickle package: 
+    ```
+    import pickle 
+    ```
+    - Save the figure as a binary file: 
+    ```
+    pickle.dump(fig, open('[fileName]', 'wb')) 
+    ```
+    - Read the file to open the figure: 
+    ```
+    fig = pickle.load(open('[fileName]', 'rb'))
+    fig.show() 
+    ```  
+
 ## Dependencies 
 Data analysis was performed using Python (v3.11.6) and R (v4.2.3). NumPy (v1.26), pandas (v2.1.3), scikit-learn (v1.3.2), SciPy (v1.11.14), loess (v2.1.2), and phate (v1.0.11) Python libraries were used to perform SPCA, PCA, PHATE, and other statistical analyses. Seurat (v4.3.0), slingshot (v2.6.0), tidyr (v1.3.0), and dplyr (v1.1.2) R packages were used to perform Slingshot. The matplotlib (v3.8.2) Python library was used for data visualization. 
 
@@ -35,6 +50,7 @@ Data analysis was performed using Python (v3.11.6) and R (v4.2.3). NumPy (v1.26)
     - [ti/phate_traj.Rmd](./ti/phate_traj.Rmd)
 
 ## Supplemental Figures 
+Extensions of figures can be found in [supplement.pdf](./supplement.pdf). 
 
 ## License 
 This software is licensed under the [MIT license](https://opensource.org/licenses/MIT).
