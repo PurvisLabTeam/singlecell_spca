@@ -22,7 +22,7 @@ git clone https://github.com/PurvisLabTeam/singlecell_spca.git
 - Run [method_comparisons.ipynb](./method_comparisions.ipynb) to compare performance of SPCA, PCA, and PHATE. 
 
 All figures are saved as pdfs in the [figures](./figures/) folder. To save and view figures interactively, follow the following steps: 
-- Add the pickle package: 
+- Import the pickle package: 
 ```
 import pickle 
 ```
@@ -30,7 +30,7 @@ import pickle
 ```
 pickle.dump(fig, open('[fileName]', 'wb')) 
 ```
-- Read the file to open the figure: 
+- Read the binary file to open the interactive figure: 
 ```
 fig = pickle.load(open('[fileName]', 'rb'))
 fig.show() 
